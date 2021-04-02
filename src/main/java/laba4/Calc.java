@@ -40,9 +40,12 @@ public class Calc extends HttpServlet {
 			request.setAttribute("second_result", second_calc);
 			double r;
 			double h;
-			try { 
+			try { 	
 			r=Double.parseDouble(first_calc);
 			h=Double.parseDouble(second_calc);
+			if (r <= 0 || h <= 0) {
+				throw new NumberFormatException();
+			}
 			result = (Math.PI * (r * r) * h) / 3;
 			}
 			catch (NumberFormatException e) {

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Калькулятор расчета объема конуса</title>
+<title>Калькулятор расчета объема конуса (расчет ведется в мм)</title>
 </head>
 <body>
-<h1>Калькулятор расчета объема конуса</h1>
+<h1>Калькулятор расчета объема конуса (расчет ведется в мм)</h1>
     <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
         <label for="first">Радиус основания конуса: </label>
         <input type="text" name="first" id="first" value="${first}">

@@ -47,7 +47,6 @@ public class Calc extends HttpServlet {
 				throw new NumberFormatException();
 			}
 			result = (Math.PI * (r * r) * h) / 3;
-			result = result * 10;
 			}
 			catch (NumberFormatException e) {
 				result = 0;
